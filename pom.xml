@@ -11,8 +11,8 @@
 
   <scm>
     <url>http://github.com/Dorvaryn/http-request/tree/master</url>
-    <connection>scm:git:git://github.com/novoda/Commons.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/novoda/Commons.git</developerConnection>
+    <connection>scm:git:git://github.com/Dorvaryn/http-request.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/Dorvaryn/http-request.git</developerConnection>
   </scm>
 
   <distributionManagement>
