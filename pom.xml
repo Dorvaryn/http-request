@@ -3,9 +3,43 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.kevinsawicki</groupId>
   <artifactId>http-request-parent</artifactId>
-  <version>1.0</version>
+  <version>5.5-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
     <module>lib</module>
   </modules>
+
+  <scm>
+    <url>http://github.com/Dorvaryn/http-request/tree/master</url>
+    <connection>scm:git:git://github.com/novoda/Commons.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/novoda/Commons.git</developerConnection>
+  </scm>
+
+  <distributionManagement>
+    <repository>
+      <id>local-public-mvn-repo</id>
+      <name>local clone of https://github.com/novoda/public-mvn-repo</name>
+      <url>${local.public.mvn.repo}</url>
+    </repository>
+  </distributionManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-scm-plugin</artifactId>
+        <configuration>
+          <scmVersionType>branch</scmVersionType>
+          <scmVersion>master</scmVersion>
+        </configuration>
+      </plugin>
+      <plugin>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
+          <useReleaseProfile>false</useReleaseProfile>
+        </configuration>
+        <goals />
+      </plugin>
+    </plugins>
+  </build>
 </project>
