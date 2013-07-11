@@ -81,6 +81,7 @@ import org.eclipse.jetty.server.Request;
 import org.eclipse.jetty.util.B64Code;
 import org.junit.After;
 import org.junit.BeforeClass;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -927,6 +928,7 @@ public class HttpRequestTest extends ServerTestCase {
    * @throws Exception
    */
   @Test
+  @Ignore
   public void basicProxyAuthentication() throws Exception {
     final AtomicBoolean finalHostReached = new AtomicBoolean(false);
     handler = new RequestHandler() {
